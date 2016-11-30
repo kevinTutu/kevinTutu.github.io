@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2016/11 | Wangzihang</title>
+  <title>工作/Android端更新React-native | Wangzihang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Wangzihang">
-<meta property="og:url" content="http://yoursite.com/archives/2016/11/index.html">
+  <meta name="description" content="工作/Android端更新React-native">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工作/Android端更新React-native">
+<meta property="og:url" content="http://yoursite.com/2016/11/30/工作之更新react/index.html">
 <meta property="og:site_name" content="Wangzihang">
+<meta property="og:description" content="工作/Android端更新React-native">
+<meta property="og:updated_time" content="2016-11-30T07:38:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wangzihang">
+<meta name="twitter:title" content="工作/Android端更新React-native">
+<meta name="twitter:description" content="工作/Android端更新React-native">
   
     <link rel="alternative" href="/atom.xml" title="Wangzihang" type="application/atom+xml">
   
@@ -135,103 +139,91 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-工作之更新react" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
   
+    <h1 class="article-title" itemprop="name">
+      工作/Android端更新React-native
+    </h1>
   
+
+      </header>
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
+        <blockquote>
+<p>工作/Android端更新React-native<br><a id="more"></a></p>
+</blockquote>
+<h1 id="Android端-React-native-更新"><a href="#Android端-React-native-更新" class="headerlink" title="Android端 React-native 更新"></a>Android端 React-native 更新</h1><p><strong>react 更新一般为break change 如果要更新react需要和新版react包放入原生app中，否则如果发codepush更新，老用户无法正常收到热更新，收到也会出错。</strong></p>
+<h2 id="Android端React的更新"><a href="#Android端React的更新" class="headerlink" title="Android端React的更新"></a>Android端React的更新</h2><p> 1.替换arr文件：从react native官方demo ,下载react-native init [ProjectName]，从node_modules中的react－native后的android里的aar放入jar（如最新stable版本为0.38.0）</p>
+<p> 2.替换jnilib库：project/node_modules/react-native/ReactAndroid/src/main/jni/prebuilt<br>替换armeabi_v7  armeabi  x86文件夹下的so文件</p>
+<p>3.更改混淆文件：依据demo</p>
+<p>4.替换jar包：/Users/xhc/awesomeproject/node_modules/react-native/ReactAndroid中的build.gradle<br>更改build.gradle的jar包</p>
+<h2 id="codePush更新（暂用微软服务器，若后续迁到自己服务器，再做修改）"><a href="#codePush更新（暂用微软服务器，若后续迁到自己服务器，再做修改）" class="headerlink" title="codePush更新（暂用微软服务器，若后续迁到自己服务器，再做修改）"></a>codePush更新（暂用微软服务器，若后续迁到自己服务器，再做修改）</h2><p>1.github上找到 react-native-code-push clone工程</p>
+<p>2.替换 microsoft.codepush.react 下文件</p>
+<p>（注：有坑，了能需要改一部分代码）</p>
+<h2 id="React-更新"><a href="#React-更新" class="headerlink" title="React 更新"></a>React 更新</h2><p><strong>前端更新库根据packageJson  里的文件版本号确定新版或者旧版</strong><br>1.npm i react-native@[版本号] [–save] 更新react-native<br>2.npm i react@[版本号] [–save]  更新react</p>
+<h2 id="IOS端React的更新"><a href="#IOS端React的更新" class="headerlink" title="IOS端React的更新"></a>IOS端React的更新</h2><p>(…待做)</p>
+
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/工作之更新react/" class="archive-article-date">
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/30/工作之更新react/" class="archive-article-date">
   	<time datetime="2016-11-30T06:53:09.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-30</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/工作之更新react/">工作/Android端更新React-native</a>
-    </h1>
-  
+      
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/28/React-Native-从学车到补胎和发车经历/" class="archive-article-date">
-  	<time datetime="2016-11-28T07:13:09.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/28/React-Native-从学车到补胎和发车经历/">React Native 从学车到补胎和发车经历</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/28/React-Native-从学车到补胎和发车经历/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">React Native 从学车到补胎和发车经历</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/28/首页接口及字段意义/" class="archive-article-date">
-  	<time datetime="2016-11-28T07:13:09.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/28/首页接口及字段意义/">首页接口及字段</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
 
 
       </div>
@@ -254,8 +246,8 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
