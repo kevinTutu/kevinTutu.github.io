@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/11/30/工作之更新react/index.html">
 <meta property="og:site_name" content="Wangzihang">
 <meta property="og:description" content="工作/Android端更新React-native">
-<meta property="og:updated_time" content="2016-12-01T06:45:20.000Z">
+<meta property="og:updated_time" content="2016-12-15T02:53:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工作/Android端更新React-native">
 <meta name="twitter:description" content="工作/Android端更新React-native">
@@ -163,7 +163,7 @@
 <h1 id="Android端-React-native-更新"><a href="#Android端-React-native-更新" class="headerlink" title="Android端 React-native 更新"></a>Android端 React-native 更新</h1><p><strong>react 更新一般为break change 如果要更新react需要和新版react包放入原生app中，否则如果发codepush更新，老用户无法正常收到热更新，收到也会出错。</strong></p>
 <h2 id="Android端React的更新"><a href="#Android端React的更新" class="headerlink" title="Android端React的更新"></a>Android端React的更新</h2><p> 1.替换arr文件：从react native官方demo ,下载react-native init [ProjectName]，从node_modules中的react－native后的android里的aar放入jar（如最新stable版本为0.38.0）</p>
 <p> 2.替换jnilib库：project/node_modules/react-native/ReactAndroid/src/main/jni/prebuilt<br>替换armeabi_v7  armeabi  x86文件夹下的so文件</p>
-<p>3.更改混淆文件：依据demo</p>
+<p>3.更改混淆文件：依据demo react-native init [ProjectName]</p>
 <p>4.替换jar包：/Users/xhc/awesomeproject/node_modules/react-native/ReactAndroid中的build.gradle<br>更改build.gradle的jar包</p>
 <h2 id="codePush更新（暂用微软服务器，若后续迁到自己服务器，再做修改）"><a href="#codePush更新（暂用微软服务器，若后续迁到自己服务器，再做修改）" class="headerlink" title="codePush更新（暂用微软服务器，若后续迁到自己服务器，再做修改）"></a>codePush更新（暂用微软服务器，若后续迁到自己服务器，再做修改）</h2><p>1.github上找到 react-native-code-push clone工程</p>
 <p>2.替换 microsoft.codepush.react 下文件</p>
@@ -190,6 +190,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2016/11/30/CodePush服务器迁移/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CodePush 服务迁移
+        
+      </div>
+    </a>
   
   
     <a href="/2016/11/28/React-Native-从学车到补胎和发车经历/" id="article-nav-older" class="article-nav-link-wrap">
@@ -286,7 +295,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				
+    				<a href="/tags/codePush/" style="font-size: 10px;">codePush</a> <a href="/tags/服务器/" style="font-size: 10px;">服务器</a>
     			</div>
     	</section>
     
